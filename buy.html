@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy | Luminous Estate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="bg-surface text-on-surface font-sans antialiased overflow-x-hidden selection:bg-primary selection:text-on-primary pt-24">
+
+    <!-- Global Header (Dark Text Variant for subpages) -->
+    <header class="fixed top-0 w-full z-50 bg-white shadow-md py-4 transition-all duration-500" id="main-header">
+        <div class="flex justify-between items-center px-6 lg:px-12 max-w-7xl mx-auto">
+            <a class="z-50" href="/" id="brand-logo">
+                <span class="font-display text-2xl uppercase tracking-[0.2em] font-light text-black transition-colors duration-300">Luminous</span>
+            </a>
+            <nav class="hidden md:flex space-x-10 items-center" id="nav-links">
+                <a class="text-xs uppercase tracking-[0.15em] text-primary hover:text-primary-fixed transition-colors" href="/buy.html">Buy</a>
+                <a class="text-xs uppercase tracking-[0.15em] text-black hover:text-primary transition-colors" href="/sell.html">Sell</a>
+                <a class="text-xs uppercase tracking-[0.15em] text-black hover:text-primary transition-colors" href="#">Developments</a>
+            </nav>
+            <div class="hidden md:block z-50">
+                <a class="text-xs uppercase tracking-wider text-black border border-black px-6 py-3 hover:bg-black hover:text-white transition-all duration-300" href="/sell.html">Appraisal</a>
+            </div>
+            <button class="md:hidden z-50 text-black" id="mobile-menu-btn">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="py-12 bg-white border-b border-outline-variant/30">
+            <div class="max-w-7xl mx-auto px-6 lg:px-12">
+                <h1 class="text-4xl md:text-5xl font-display text-on-background mb-4">Properties for Sale</h1>
+                <p class="text-on-surface-variant font-light max-w-2xl">Explore our curated collection of prestige properties available across the region.</p>
+                
+                <!-- Filters -->
+                <div class="mt-8 flex flex-wrap gap-4">
+                    <select class="border border-outline-variant bg-transparent px-4 py-2 text-sm focus:outline-none focus:border-primary">
+                        <option>Any Price</option>
+                        <option>$1M - $3M</option>
+                        <option>$3M - $5M</option>
+                        <option>$5M+</option>
+                    </select>
+                    <select class="border border-outline-variant bg-transparent px-4 py-2 text-sm focus:outline-none focus:border-primary">
+                        <option>Bedrooms</option>
+                        <option>2+</option>
+                        <option>3+</option>
+                        <option>4+</option>
+                    </select>
+                    <button class="bg-[#0a1118] text-white px-6 py-2 text-sm uppercase tracking-wider hover:bg-primary transition-colors">Filter</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Properties Grid -->
+        <section class="py-16 bg-surface-container-lowest">
+            <div class="max-w-7xl mx-auto px-6 lg:px-12">
+                <div id="buy-properties-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Properties injected by main.js -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Global Footer -->
+    <footer class="bg-surface py-20 border-t border-outline-variant/30">
+        <!-- Re-use the footer from index.html -->
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 md:grid-cols-4 gap-16 mb-16">
+            <div class="col-span-1 md:col-span-1 space-y-8">
+                <span class="font-display text-xl uppercase tracking-[0.2em] font-light text-on-surface">Luminous</span>
+                <div class="text-sm text-on-surface-variant space-y-3 font-light">
+                    <p>Olympia Plaza, Shop 106<br>640 Oxley Road<br>Corinda QLD 4075</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="./main.js"></script>
+</body>
+</html>

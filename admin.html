@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Luminous Estate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        /* Hide scrollbar for a cleaner look */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-sans antialiased flex h-screen overflow-hidden selection:bg-primary selection:text-on-primary">
+
+    <!-- Sidebar -->
+    <aside class="w-64 bg-[#0a1118] text-white flex flex-col transition-all duration-300 flex-shrink-0">
+        <div class="h-20 flex items-center justify-center border-b border-white/10">
+            <a href="/" class="font-display text-xl uppercase tracking-[0.2em] font-light text-white">Luminous</a>
+        </div>
+        <nav class="flex-1 overflow-y-auto py-4">
+            <ul class="space-y-2">
+                <li>
+                    <a href="#" class="flex items-center gap-3 px-6 py-3 text-sm font-medium bg-primary/20 text-primary-fixed border-r-2 border-primary">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                        Properties
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center gap-3 px-6 py-3 text-sm font-light text-white/70 hover:text-white hover:bg-white/5 transition-colors">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                        Agents
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center gap-3 px-6 py-3 text-sm font-light text-white/70 hover:text-white hover:bg-white/5 transition-colors">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        Settings
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="p-6 border-t border-white/10">
+            <a href="/" class="flex items-center gap-3 text-sm font-light text-white/70 hover:text-white transition-colors">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path></svg>
+                View Live Site
+            </a>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 flex flex-col h-screen overflow-hidden bg-surface-container-lowest">
+        <!-- Top Bar -->
+        <header class="h-20 bg-white border-b border-outline-variant/30 flex items-center justify-between px-8 flex-shrink-0 z-10">
+            <h1 class="font-display text-2xl text-on-background">Property Management</h1>
+            <div class="flex items-center gap-6">
+                <button id="add-property-btn" class="bg-primary text-white font-medium px-6 py-2.5 text-sm uppercase tracking-wider rounded-sm hover:bg-[#8e6d23] transition-colors shadow-sm flex items-center gap-2">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg> Add Property
+                </button>
+                <div class="w-10 h-10 rounded-full bg-surface-container border border-outline-variant/50 overflow-hidden">
+                    <img src="https://ui-avatars.com/api/?name=Admin&background=random" alt="Admin" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </header>
+
+        <!-- Content Area -->
+        <div class="flex-1 overflow-auto p-8">
+            <div class="bg-white rounded-md shadow-sm border border-outline-variant/30 overflow-hidden">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-surface text-on-surface-variant text-xs uppercase tracking-wider border-b border-outline-variant/30">
+                            <th class="px-6 py-4 font-semibold">Property</th>
+                            <th class="px-6 py-4 font-semibold">Location</th>
+                            <th class="px-6 py-4 font-semibold">Price</th>
+                            <th class="px-6 py-4 font-semibold">Status</th>
+                            <th class="px-6 py-4 font-semibold text-right">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="property-table-body" class="divide-y divide-outline-variant/20">
+                        <!-- Rows injected by admin.js -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <!-- Add/Edit Property Modal -->
+    <div id="property-modal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-md shadow-2xl w-full max-w-3xl overflow-hidden flex flex-col max-h-[90vh]">
+            <div class="px-8 py-6 border-b border-outline-variant/30 flex justify-between items-center bg-surface">
+                <h2 id="modal-title" class="font-display text-2xl text-on-background">Add New Property</h2>
+                <button id="close-modal-btn" class="text-on-surface-variant hover:text-error transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+            
+            <div class="p-8 overflow-y-auto">
+                <form id="property-form" class="space-y-6">
+                    <input type="hidden" id="prop-id">
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="md:col-span-2">
+                            <label class="block text-sm text-on-surface-variant font-medium mb-2">Title</label>
+                            <input type="text" id="prop-title" required class="w-full border border-outline-variant px-4 py-3 text-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary rounded-sm transition-all placeholder:text-on-surface-variant/50" placeholder="e.g. The Belvedere Estate">
+                        </div>
+                        
+                        <div class="md:col-span-2">
+                            <label class="block text-sm text-on-surface-variant font-medium mb-2">Address / Location</label>
+                            <input type="text" id="prop-address" required class="w-full border border-outline-variant px-4 py-3 text-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary rounded-sm transition-all placeholder:text-on-surface-variant/50" placeholder="e.g. 124 Premium Blvd, Beverly Hills">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm text-on-surface-variant font-medium mb-2">Price ($)</label>
+                            <input type="number" id="prop-price" class="w-full border border-outline-variant px-4 py-3 text-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary rounded-sm transition-all placeholder:text-on-surface-variant/50" placeholder="e.g. 12500000">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm text-on-surface-variant font-medium mb-2">Status</label>
+                            <select id="prop-status" required class="w-full border border-outline-variant px-4 py-3 text-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary rounded-sm transition-all bg-white">
+                                <option value="For Sale">For Sale</option>
+                                <option value="Just Listed">Just Listed</option>
+                                <option value="Under Offer">Under Offer</option>
+                                <option value="Sold">Sold</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm text-on-surface-variant font-medium mb-2">Bedrooms</label>
+                            <input type="number" id="prop-beds" step="0.5" required class="w-full border border-outline-variant px-4 py-3 text-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary rounded-sm transition-all" placeholder="e.g. 5">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm text-on-surface-variant font-medium mb-2">Bathrooms</label>
+                            <input type="number" id="prop-baths" step="0.5" required class="w-full border border-outline-variant px-4 py-3 text-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary rounded-sm transition-all" placeholder="e.g. 4">
+                        </div>
+
+                        <div class="md:col-span-2">
+                            <label class="block text-sm text-on-surface-variant font-medium mb-2">Image URL</label>
+                            <input type="url" id="prop-image" required class="w-full border border-outline-variant px-4 py-3 text-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary rounded-sm transition-all placeholder:text-on-surface-variant/50" placeholder="https://images.unsplash.com/...">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="px-8 py-6 border-t border-outline-variant/30 bg-surface flex justify-end gap-4">
+                <button type="button" id="cancel-modal-btn" class="px-6 py-2.5 text-sm font-medium text-on-surface-variant hover:text-black transition-colors uppercase tracking-wider">Cancel</button>
+                <button type="button" id="save-property-btn" class="bg-[#0a1118] text-white font-medium px-8 py-2.5 text-sm uppercase tracking-wider rounded-sm hover:bg-primary transition-colors shadow-sm">Save Property</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell | Luminous Estate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="bg-surface text-on-surface font-sans antialiased overflow-x-hidden selection:bg-primary selection:text-on-primary">
+
+    <!-- Global Header -->
+    <header class="fixed top-0 w-full z-50 bg-white shadow-md py-4 transition-all duration-500" id="main-header">
+        <div class="flex justify-between items-center px-6 lg:px-12 max-w-7xl mx-auto">
+            <a class="z-50" href="/" id="brand-logo">
+                <span class="font-display text-2xl uppercase tracking-[0.2em] font-light text-black transition-colors duration-300">Luminous</span>
+            </a>
+            <nav class="hidden md:flex space-x-10 items-center" id="nav-links">
+                <a class="text-xs uppercase tracking-[0.15em] text-black hover:text-primary transition-colors" href="/buy.html">Buy</a>
+                <a class="text-xs uppercase tracking-[0.15em] text-primary hover:text-primary-fixed transition-colors" href="/sell.html">Sell</a>
+                <a class="text-xs uppercase tracking-[0.15em] text-black hover:text-primary transition-colors" href="#">Developments</a>
+            </nav>
+            <div class="hidden md:block z-50">
+                <a class="text-xs uppercase tracking-wider text-black border border-black px-6 py-3 hover:bg-black hover:text-white transition-all duration-300" href="/sell.html">Appraisal</a>
+            </div>
+            <button class="md:hidden z-50 text-black" id="mobile-menu-btn">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="py-24 bg-surface-container-lowest">
+            <div class="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div class="animate-on-scroll">
+                    <p class="text-primary uppercase tracking-[0.2em] text-sm font-semibold mb-4">Maximize Your Value</p>
+                    <h1 class="text-4xl md:text-6xl font-display text-on-background mb-6 leading-tight">Sell with<br>Confidence.</h1>
+                    <p class="text-on-surface-variant font-light max-w-md mb-8">
+                        Our premium marketing strategies and deep network of high-net-worth buyers ensure your property achieves its maximum potential.
+                    </p>
+                    <a href="#appraisal" class="px-8 py-4 bg-[#0a1118] text-white font-medium hover:bg-primary transition-colors duration-300 rounded-sm inline-block tracking-wide">Get a Free Appraisal</a>
+                </div>
+                <div class="relative animate-on-scroll delay-100">
+                    <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=2070&auto=format&fit=crop" alt="Premium Property" class="w-full h-auto rounded-sm shadow-2xl">
+                    <div class="absolute -bottom-6 -left-6 bg-white p-6 shadow-xl max-w-xs">
+                        <p class="font-display text-2xl text-primary mb-1">Record Sales</p>
+                        <p class="text-sm text-on-surface-variant font-light">Achieving neighborhood records through superior presentation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Appraisal Form -->
+        <section id="appraisal" class="py-24 bg-[#0a1118] text-white">
+            <div class="max-w-4xl mx-auto px-6 lg:px-12 text-center">
+                <h2 class="text-3xl md:text-4xl font-display mb-4 text-white">What is your property worth?</h2>
+                <div class="w-16 h-0.5 bg-primary mx-auto mb-8"></div>
+                <p class="text-white/80 font-light mb-10 max-w-xl mx-auto">Enter your details below and one of our area specialists will prepare a comprehensive valuation report for your home.</p>
+                
+                <form class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left animate-on-scroll">
+                    <div>
+                        <label class="block text-sm text-white/70 mb-2">First Name</label>
+                        <input type="text" class="w-full bg-white/10 border border-white/20 px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors">
+                    </div>
+                    <div>
+                        <label class="block text-sm text-white/70 mb-2">Last Name</label>
+                        <input type="text" class="w-full bg-white/10 border border-white/20 px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors">
+                    </div>
+                    <div class="md:col-span-2">
+                        <label class="block text-sm text-white/70 mb-2">Property Address</label>
+                        <input type="text" class="w-full bg-white/10 border border-white/20 px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors" placeholder="Start typing...">
+                    </div>
+                    <div class="md:col-span-2 mt-4 text-center">
+                        <button type="button" class="px-12 py-4 bg-primary text-white font-medium hover:bg-[#8e6d23] transition-colors duration-300 rounded-sm tracking-wide">Request Report</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Global Footer -->
+    <footer class="bg-surface py-20 border-t border-outline-variant/30">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 md:grid-cols-4 gap-16 mb-16">
+            <div class="col-span-1 md:col-span-1 space-y-8">
+                <span class="font-display text-xl uppercase tracking-[0.2em] font-light text-on-surface">Luminous</span>
+                <div class="text-sm text-on-surface-variant space-y-3 font-light">
+                    <p>Olympia Plaza, Shop 106<br>640 Oxley Road<br>Corinda QLD 4075</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
