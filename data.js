@@ -19,7 +19,7 @@ const DEFAULT_PROPERTIES = [
         bedrooms: 4,
         bathrooms: 3,
         status: 'Just Listed',
-        image: 'https://images.unsplash.com/photo-1613490908578-8fc8dbe4df66?q=80&w=2070&auto=format&fit=crop'
+        image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075&auto=format&fit=crop'
     },
     {
         id: 'prop_3',
