@@ -1,183 +1,175 @@
 <!DOCTYPE html>
-<html class="light" lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luminous Estate | Premium Real Estate</title>
     
-    <!-- Security Best Practice: Basic Content Security Policy -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https://lh3.googleusercontent.com data:; font-src 'self' https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:;">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
     
-    <title>Luminous Estate | Architectural Excellence</title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,300;400;500;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
-    
-    <!-- Vite Entry Point (imports styles and logic) -->
-  <script type="module" crossorigin src="/assets/index-D8gJibec.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-D5q9kAbl.css">
+    <!-- Vite CSS -->
+  <script type="module" crossorigin src="/assets/data-Dy8YZh8j.js"></script>
+  <script type="module" crossorigin src="/assets/main-D1X7-zkG.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/data-vuMcae8v.css">
 </head>
-<body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden">
-    <!-- TopNavBar -->
+<body class="bg-surface text-on-surface font-sans antialiased overflow-x-hidden selection:bg-primary selection:text-on-primary">
+
+    <!-- Global Header -->
     <header class="fixed top-0 w-full z-50 transition-all duration-500 bg-transparent py-6" id="main-header">
-        <div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
-            <a class="z-50 text-pure-white" href="/" id="brand-logo">
-                <span class="font-display-lg text-headline-sm uppercase tracking-widest font-light text-white transition-colors duration-300">Luminous Estate</span>
+        <div class="flex justify-between items-center px-6 lg:px-12 max-w-7xl mx-auto">
+            <a class="z-50" href="/" id="brand-logo">
+                <span class="font-display text-2xl uppercase tracking-[0.2em] font-light text-white transition-colors duration-300 drop-shadow-md">Luminous</span>
             </a>
             <nav class="hidden md:flex space-x-10 items-center" id="nav-links">
-                <a class="font-label-caps text-label-caps uppercase tracking-[0.15em] text-white hover:text-primary-container transition-colors" href="#">Buy</a>
-                <a class="font-label-caps text-label-caps uppercase tracking-[0.15em] text-white hover:text-primary-container transition-colors" href="#">Sell</a>
-                <a class="font-label-caps text-label-caps uppercase tracking-[0.15em] text-white hover:text-primary-container transition-colors" href="#">Rent</a>
-                <a class="font-label-caps text-label-caps uppercase tracking-[0.15em] text-white hover:text-primary-container transition-colors" href="#">Developments</a>
-                <a class="font-label-caps text-label-caps uppercase tracking-[0.15em] text-white hover:text-primary-container transition-colors" href="#">The Standard</a>
+                <a class="text-xs uppercase tracking-[0.15em] text-white hover:text-primary-fixed transition-colors drop-shadow-md" href="/buy.html">Buy</a>
+                <a class="text-xs uppercase tracking-[0.15em] text-white hover:text-primary-fixed transition-colors drop-shadow-md" href="/sell.html">Sell</a>
+                <a class="text-xs uppercase tracking-[0.15em] text-white hover:text-primary-fixed transition-colors drop-shadow-md" href="#">Developments</a>
             </nav>
-            <div class="hidden md:block z-50" id="nav-cta">
-                <a class="font-button text-button uppercase tracking-wider text-white border border-white/50 px-8 py-3 hover:bg-white hover:text-on-background transition-all duration-300" href="#">Private Valuation</a>
+            <div class="hidden md:block z-50">
+                <a class="text-xs uppercase tracking-wider text-white border border-white px-6 py-3 hover:bg-white hover:text-black transition-all duration-300" href="/sell.html">Appraisal</a>
             </div>
             <button class="md:hidden z-50 text-white" id="mobile-menu-btn">
-                <span class="material-symbols-outlined text-[32px]">menu</span>
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"></path></svg>
             </button>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="relative h-screen min-h-[800px] flex items-center justify-center overflow-hidden">
-        <div class="absolute inset-0 z-0">
-            <img alt="Modern living room interior with white sofas, large windows looking out to a green garden, bathed in natural sunlight." class="w-full h-full object-cover scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMC4rfHNGOBdqB_f6YVq1-Pnt6d6k0xRAECSOjcIR9NK2tO0WS54xY_hKnHrNObeVRVWysQvWshTHW3uxf0sQU_HTgsrpeujxr7Rk0daqO2_0a2Wb0EPevnlmK_EgOvdKOH-WesQvaHVp00zI1rHtGXw0nbS4AO9jOhEyvdwUcPUeUFvtq7MV4vsL9Kmksy2rhS33RI8ZpAq9w7g5-B2x59DEG54sVGDX8eP9P0rrYk4AeEZQfProRJFEazz1nzrAWYFIw6GyLz7vQ">
-            <div class="absolute inset-0 bg-inverse-surface/40"></div>
-        </div>
-        <div class="relative z-10 text-center px-margin-mobile md:px-margin-desktop max-w-5xl mx-auto mt-20 animate-on-scroll">
-            <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-white mb-8 drop-shadow-lg leading-tight">Architectural Excellence.<br>Curated Living.</h1>
-            <p class="font-body-lg text-body-lg text-white/90 max-w-3xl mx-auto drop-shadow-md font-light">
-                Specializing in the most prestigious estates across the Inner West.
-            </p>
-        </div>
-        <div class="absolute bottom-12 left-1/2 -translate-x-1/2 z-10 animate-bounce">
-            <span class="material-symbols-outlined text-white/70 text-[32px]">expand_more</span>
-        </div>
-    </section>
-
-    <!-- Private Valuation Section -->
-    <section class="bg-surface py-section-gap px-margin-mobile md:px-margin-desktop">
-        <div class="max-w-4xl mx-auto glass-panel p-10 md:p-16 shadow-lg flex flex-col md:flex-row items-center justify-between gap-12 relative overflow-hidden animate-on-scroll border border-outline-variant/50">
-            <div class="absolute -right-32 -top-32 w-96 h-96 bg-primary-container/5 rounded-full blur-3xl"></div>
-            <div class="flex-1 z-10 text-center md:text-left">
-                <h2 class="font-headline-md text-headline-md text-on-surface mb-4 font-light">Private <span class="text-primary-container italic">Valuation</span></h2>
-                <p class="font-body-md text-body-md text-on-surface-variant">Request a bespoke property appraisal from our experts.</p>
+    <main>
+        <!-- Hero Section -->
+        <section class="relative w-full h-[90vh] min-h-[600px] flex items-center justify-center overflow-hidden">
+            <!-- Background Image -->
+            <div class="absolute inset-0 z-0">
+                <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075&auto=format&fit=crop" alt="Luxury Estate Hero" class="w-full h-full object-cover scale-105 transform origin-center transition-transform duration-[20s] ease-out hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent"></div>
             </div>
-            <div class="flex-1 w-full max-w-md z-10">
-                <form class="flex flex-col gap-6">
-                    <div class="relative">
-                        <input class="w-full bg-transparent border-b border-outline-variant px-4 py-3 font-body-md text-body-md focus:outline-none focus:border-primary-container transition-colors placeholder:text-on-surface-variant/50" placeholder="Enter Property Address" type="text">
+
+            <!-- Content -->
+            <div class="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-12 flex flex-col justify-center h-full mt-12">
+                <div class="max-w-2xl animate-on-scroll">
+                    <p class="text-primary-fixed uppercase tracking-[0.2em] text-sm font-semibold mb-4 drop-shadow-md">Exclusively Yours</p>
+                    <h1 class="text-5xl md:text-7xl font-display text-white leading-tight mb-6 drop-shadow-lg">Architectural Excellence.<br>Curated Living.</h1>
+                    <p class="text-lg md:text-xl text-white/90 mb-10 font-light max-w-lg drop-shadow-md">
+                        Servicing the most prestigious estates across the region. We offer a boutique real estate experience tailored to your individual property needs.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#featured" class="px-8 py-4 bg-primary text-on-primary font-medium hover:bg-[#8e6d23] transition-colors duration-300 rounded-sm text-center tracking-wide shadow-lg">View Properties</a>
+                        <a href="/sell.html" class="px-8 py-4 bg-transparent border border-white text-white hover:bg-white hover:text-black transition-colors duration-300 rounded-sm text-center tracking-wide shadow-lg">Request Appraisal</a>
                     </div>
-                    <button class="bg-primary-container text-on-primary-container font-button text-button uppercase tracking-wider py-4 hover:bg-primary transition-all shadow-md hover:shadow-lg" type="button">Request Valuation</button>
-                </form>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- The Luminous Standard Section -->
-    <section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-lowest">
-        <div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
-            <div class="order-2 md:order-1 relative animate-on-scroll">
-                <div class="absolute -inset-6 border border-primary-container/30 z-0"></div>
-                <img alt="Luxurious modern living area with elegant decor." class="relative z-10 shadow-2xl w-full object-cover aspect-[4/5] p-2 bg-white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAm4zKrSz790a1wED8cj61TnqeDMOPnmNAKfEbUBs9j5u_tVv-FotiUykraRcbLwMPP2obAoOwmH4hnmnVWlWp5PEkOruc3p34RJa1JCGUCOLS2qau0KHMmAGJcJEDX3fyoWHBOW9hEubis_qVmUBbcDs8zmxO0nGiLfXwXLn7kobsMVRNDHBikEDyAZTVEaO8tHKy1KOZ-q5I3M92xL391UT8vJvOdVBvDIlh_OmOz8R-8QAHeB1ckRV8f2TNKHj2X8oGWAEhCXSjO">
+        <!-- Our Difference Section -->
+        <section class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-6 lg:px-12">
+                <div class="text-center mb-16 animate-on-scroll">
+                    <h2 class="text-3xl md:text-4xl font-display text-on-background mb-4">Our Difference</h2>
+                    <div class="w-16 h-0.5 bg-primary mx-auto"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <div class="flex flex-col items-center text-center animate-on-scroll delay-100">
+                        <div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center mb-6 text-primary">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-display font-semibold mb-3 text-on-background">Unrivaled Expertise</h3>
+                        <p class="text-on-surface-variant font-light">Decades of combined experience in the high-end luxury market, bringing unparalleled insights to every transaction.</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center animate-on-scroll delay-200">
+                        <div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center mb-6 text-primary">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-display font-semibold mb-3 text-on-background">Boutique Service</h3>
+                        <p class="text-on-surface-variant font-light">A personalized, white-glove approach ensuring absolute discretion and a seamless experience for our clientele.</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center animate-on-scroll delay-300">
+                        <div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center mb-6 text-primary">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-display font-semibold mb-3 text-on-background">Exceptional Results</h3>
+                        <p class="text-on-surface-variant font-light">Consistently achieving record-breaking sales and maximizing returns through innovative marketing strategies.</p>
+                    </div>
+                </div>
             </div>
-            <div class="order-1 md:order-2 space-y-10 animate-on-scroll">
-                <h2 class="font-headline-md text-display-lg text-on-surface font-light leading-tight">
-                    The Luminous<br><span class="italic text-primary-container">Standard</span>
-                </h2>
-                <div class="w-16 h-px bg-primary-container"></div>
-                <p class="font-body-lg text-body-lg text-on-surface-variant font-light">
-                    The experienced team at Luminous Estate possess an unparalleled understanding of the luxury market and the distinctive qualities of premium neighbourhoods.
-                </p>
-                <p class="font-body-md text-body-md text-on-surface-variant/80">
-                    Our approach combines unwavering dedication, utmost integrity, and exceptional results. Every campaign is meticulously crafted to ensure the optimal property solution and an outstanding outcome for our distinguished clientele.
-                </p>
-                <div class="pt-8">
-                    <a class="inline-flex items-center gap-3 font-button text-button uppercase tracking-wider text-primary border border-primary px-10 py-4 hover:bg-primary hover:text-white transition-all group" href="#">
-                        Explore Our Approach
-                        <span class="material-symbols-outlined transform group-hover:translate-x-2 transition-transform text-[20px]">trending_flat</span>
+        </section>
+
+        <!-- Featured Properties -->
+        <section id="featured" class="py-24 bg-[#0a1118] text-white">
+            <div class="max-w-7xl mx-auto px-6 lg:px-12">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-16 animate-on-scroll">
+                    <div class="mb-6 md:mb-0">
+                        <h2 class="text-3xl md:text-4xl font-display mb-4 text-white">Featured Properties</h2>
+                        <div class="w-16 h-0.5 bg-primary-fixed"></div>
+                    </div>
+                    <a href="/buy.html" class="hidden md:inline-flex items-center text-primary-fixed hover:text-white transition-colors duration-300">
+                        View All <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </a>
+                </div>
+
+                <div id="featured-properties-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Properties injected by main.js -->
+                </div>
+                
+                <div class="mt-12 text-center md:hidden">
+                    <a href="/buy.html" class="inline-flex items-center text-primary-fixed hover:text-white transition-colors duration-300">
+                        View All Properties <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                     </a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Help CTA Section -->
-    <section class="py-section-gap px-margin-mobile md:px-margin-desktop relative overflow-hidden">
-        <div class="absolute inset-0 z-0">
-            <img alt="Elegant living space detailing a comfortable seating area with sophisticated decor and natural light." class="w-full h-full object-cover opacity-30 grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6VioqXVv5_uTEJhhbzkPdbJPEDFknTVYigoRrHt7CSkCa-Iov61cfMCqdha5awSiLlDxNy2fC0ZFtewBwZJ3rHt9cmiZLRPPv83z2bOSEXSttY8UNH4j_339W5vgBVGuAEzxIEHu4DsDjQajPX4RcMcnx7h5NGQx9qR-PJdlIOWzS5Z1ypSci1RgHnirVOUhLiIwuuHcNDSV9SSxDr0wfn72ElkjvTzErcQtnGJW9mSy7gaCQDBKsPEwOUmNQnaIlsgiActiAL9PX">
-            <div class="absolute inset-0 bg-inverse-surface/90 mix-blend-multiply"></div>
-        </div>
-        <div class="relative z-10 max-w-4xl mx-auto text-center space-y-10 animate-on-scroll">
-            <h2 class="font-display-lg text-display-lg text-white font-light">Elevate Your Real Estate Experience</h2>
-            <p class="font-body-lg text-body-lg text-white/80 max-w-2xl mx-auto font-light">
-                The Luminous Estate team is ready to assist you through a refined combination of expertise, discretion, and market intelligence to produce outstanding property outcomes.
-            </p>
-            <div class="pt-6">
-                <button class="bg-primary-container text-on-primary-container font-button text-button uppercase tracking-wider px-12 py-5 hover:bg-white hover:text-on-surface transition-all">
-                    Consult With Us
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-surface py-20 px-margin-mobile md:px-margin-desktop border-t border-outline-variant/30">
-        <div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-4 gap-16 mb-16">
+    <!-- Global Footer -->
+    <footer class="bg-surface py-20 border-t border-outline-variant/30">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 md:grid-cols-4 gap-16 mb-16">
             <!-- Brand & Contact -->
             <div class="col-span-1 md:col-span-1 space-y-8">
-                <span class="font-display-lg text-headline-sm uppercase tracking-widest font-light text-on-surface">Luminous Estate</span>
-                <div class="font-body-md text-body-md text-on-surface-variant space-y-3">
+                <span class="font-display text-xl uppercase tracking-[0.2em] font-light text-on-surface">Luminous</span>
+                <div class="text-sm text-on-surface-variant space-y-3 font-light">
                     <p>Olympia Plaza, Shop 106<br>640 Oxley Road<br>Corinda QLD 4075</p>
                     <p class="pt-6">
-                        <a class="hover:text-primary-container transition-colors inline-flex items-center gap-3" href="tel:(07) 3668 0699">
-                            <span class="material-symbols-outlined text-[18px] text-primary-container">call</span> (07) 3668 0699
+                        <a class="hover:text-primary transition-colors inline-flex items-center gap-3" href="tel:(07) 3668 0699">
+                            <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg> (07) 3668 0699
                         </a>
                     </p>
                     <p>
-                        <a class="hover:text-primary-container transition-colors inline-flex items-center gap-3" href="mailto:info@luminousestate.com.au">
-                            <span class="material-symbols-outlined text-[18px] text-primary-container">mail</span> info@luminousestate.com.au
+                        <a class="hover:text-primary transition-colors inline-flex items-center gap-3" href="mailto:info@luminousestate.com.au">
+                            <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg> info@luminousestate.com.au
                         </a>
                     </p>
                 </div>
             </div>
             <!-- Links -->
             <div class="col-span-1">
-                <h4 class="font-label-caps text-label-caps text-on-surface mb-8 uppercase tracking-widest">Navigation</h4>
-                <ul class="space-y-4 font-body-md text-body-md">
-                    <li><a class="text-on-surface-variant hover:text-primary-container transition-colors" href="#">Home</a></li>
-                    <li><a class="text-on-surface-variant hover:text-primary-container transition-colors" href="#">Portfolio</a></li>
-                    <li><a class="text-on-surface-variant hover:text-primary-container transition-colors" href="#">Acquisitions</a></li>
-                    <li><a class="text-on-surface-variant hover:text-primary-container transition-colors" href="#">The Standard</a></li>
-                    <li><a class="text-on-surface-variant hover:text-primary-container transition-colors" href="#">Contact</a></li>
+                <h4 class="text-xs text-on-surface mb-8 uppercase tracking-[0.2em] font-semibold">Navigation</h4>
+                <ul class="space-y-4 text-sm font-light">
+                    <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="/">Home</a></li>
+                    <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="/buy.html">Buy</a></li>
+                    <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="/sell.html">Sell</a></li>
+                    <li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Developments</a></li>
                 </ul>
             </div>
             <!-- Subscribe -->
             <div class="col-span-1 md:col-span-2">
-                <h4 class="font-label-caps text-label-caps text-on-surface mb-8 uppercase tracking-widest">Exclusive Insights</h4>
-                <p class="font-body-md text-body-md text-on-surface-variant mb-8">Subscribe for market intelligence and off-market opportunities.</p>
+                <h4 class="text-xs text-on-surface mb-8 uppercase tracking-[0.2em] font-semibold">Exclusive Insights</h4>
+                <p class="text-sm text-on-surface-variant mb-8 font-light">Subscribe for market intelligence and off-market opportunities.</p>
                 <form class="flex flex-col sm:flex-row gap-0">
-                    <input class="flex-1 bg-transparent border border-outline-variant px-6 py-4 font-body-md text-body-md focus:outline-none focus:border-primary-container transition-colors" placeholder="Email Address" type="email">
-                    <button class="bg-inverse-surface text-white font-button text-button uppercase tracking-wider px-10 py-4 hover:bg-primary-container transition-colors whitespace-nowrap" type="button">Subscribe</button>
+                    <input class="flex-1 bg-transparent border border-outline-variant px-6 py-4 text-sm focus:outline-none focus:border-primary transition-colors" placeholder="Email Address" type="email">
+                    <button class="bg-[#0a1118] text-white text-xs uppercase tracking-wider px-10 py-4 hover:bg-primary transition-colors whitespace-nowrap" type="button">Subscribe</button>
                 </form>
-                <div class="flex gap-6 mt-12">
-                    <a class="text-on-surface-variant hover:text-primary-container transition-colors" href="#">
-                        <span class="material-symbols-outlined text-[24px]">language</span>
-                    </a>
-                    <a class="text-on-surface-variant hover:text-primary-container transition-colors" href="#">
-                        <span class="material-symbols-outlined text-[24px]">photo_camera</span>
-                    </a>
-                </div>
             </div>
         </div>
-        <div class="border-t border-outline-variant/30 pt-8 flex flex-col md:flex-row justify-between items-center gap-6 font-button text-button text-on-surface-variant/70 uppercase tracking-widest text-[10px]">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 border-t border-outline-variant/30 pt-8 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] text-on-surface-variant/70 uppercase tracking-widest">
             <p>© 2024 Luminous Estate. All rights reserved.</p>
             <div class="flex gap-8">
-                <a class="hover:text-primary-container transition-colors" href="#">Privacy Policy</a>
-                <a class="hover:text-primary-container transition-colors" href="#">Terms of Service</a>
+                <a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+                <a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
             </div>
         </div>
     </footer>
+
 </body>
 </html>
